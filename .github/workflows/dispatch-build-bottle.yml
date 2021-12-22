@@ -108,7 +108,7 @@ jobs:
 
       - name: Run brew test-bot --only-setup
         run: |
-          git -C "/home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core" remote set-url origin https://github.com/harens/homebrew-core
+          git -C "/home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core" remote set-url origin https://github.com/Homebrew/homebrew-core
           if [ "$RUNNER_OS" = 'macOS' ]; then
             brew test-bot --only-setup
           else
